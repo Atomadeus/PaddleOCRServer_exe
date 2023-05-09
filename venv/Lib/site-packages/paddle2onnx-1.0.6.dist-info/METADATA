@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: paddle2onnx
+Version: 1.0.6
+Summary: Export PaddlePaddle to ONNX
+Home-page: https://github.com/PaddlePaddle/Paddle2ONNX.git
+Author: paddle-infer
+Author-email: paddle-infer@baidu.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: six
+Provides-Extra: mypy
+Requires-Dist: mypy (==0.600) ; extra == 'mypy'
+

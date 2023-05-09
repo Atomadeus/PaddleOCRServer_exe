@@ -1,0 +1,19 @@
+import*as C from"../../__snowpack__/env.js";import*as k from"../utils/chart.js";import b from"../assets/images/leftClick.svg.proxy.js";import j from"../assets/images/rightClick.svg.proxy.js";const g=C.SNOWPACK_PUBLIC_PATH;import i,{useEffect as P,useImperativeHandle as E}from"../../__snowpack__/pkg/react.js";import{primaryColor as I}from"../utils/style.js";import N,{Wrapper as A,useChartTheme as S}from"../hooks/useECharts.js";import z from"../../__snowpack__/pkg/styled-components.js";import L from"../../__snowpack__/pkg/react-spinners/GridLoader.js";import O from"../../__snowpack__/pkg/lodash/defaultsDeep.js";import{useTranslation as U}from"../../__snowpack__/pkg/react-i18next.js";export var XAxisType;(function(r){r.value="value",r.log="log",r.time="time"})(XAxisType||(XAxisType={}));export var YAxisType;(function(r){r.value="value",r.log="log"})(YAxisType||(YAxisType={}));const D=z.div`
+    height: 100%;
+    width: 100%;
+    .echarts {
+        height: 100%;
+    }
+    .tooltips {
+        display: flex;
+        .tooltipName {
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 500;
+            margin-left: 10px;
+            white-space: pre-wrap;
+            hegiht: auto;
+            max-width: 800px;
+        }
+    }
+`,G=i.forwardRef(({option:r,data:o,title:p,loading:m,zoom:f,className:d,onInit:h,isCpu:c,color:a,units:l},u)=>{const{t:n}=U(["profiler","common"]),{ref:v,echart:s,wrapper:x,saveAsImage:_}=N({loading:!!m,zoom:f,autoFit:!0,onInit:h}),w=S();return E(u,()=>({restore:()=>{s==null||s.dispatchAction({type:"restore"})},saveAsImage:()=>{_(p)}})),P(()=>{const{colorAlt:H,series:T,...R}=k;if(o&&a&&l){console.log("data",o);const y=[{value:"0",name:"noData",proportion:"0"}],F=O(r,{center:[0,0],color:o.length?a:["#CCCCCC"],tooltip:{show:!!o.length,trigger:"item",extraCssText:"padding:15px;padding-right:41px;line-height:30px;width:auto;height:auto;background:rgba(0,0,0,0.75);box-shadow:1px 5px 20px 0px rgba(1,11,19,0.2);border-radius:6px;border:none;",axisPointer:{type:"none"},textStyle:{fontSize:"14",color:"#666"},position:["50%","0%"],formatter:function(t){let e="";return e+='<div class="tooltips">',e+='<div class="tooltipName">'+t.data.name+"",e+="<div>",e+='<div style="display:flex; align-items:center;">',e+='<span style="font-size:12px;margin-right:5px;width:12px;height:12px;border-radius:50%;background-color:'+a[0]+`;"></span><span style="color: #FFFFFF;">${n("timeConsuming")}</span></span> : <span style="color: #FFFFFF;">`+t.data.value+l+"</span>",e+="</div>",e+='<div style="display:flex; align-items:center;">',e+='<span style="font-size:12px;margin-right:5px;width:12px;height:12px;border-radius:50%;background-color:'+a[1]+`;"></span>${n("proportion")}</span> : <span style="color: #FFFFFF;">`+t.data.proportion+"%</span>",e+="</div>",e+="</div>",e+="</div>",e+="</div>",e}},legend:{show:!!o.length,top:"20",left:"62%",width:"30%",orient:"vertical",height:238,itemHeight:"8",textStyle:{fontSize:14,width:20},formatter:function(t){return console.log("name",t),t.length>20?t.slice(0,18)+"...":t},icon:"circle",type:"scroll",pageIcons:{vertical:["image://"+g+b,"image://"+g+j]},tooltip:{show:!0,formatter:function(t){let e="";return e+='<div class="tooltips">',e+='<div class="tooltipName">'+t.name+"",e+="</div>",e}},pageIconInactiveColor:"#981EFF"},series:[{right:"220",name:"Access From",type:"pie",radius:["63%","88%"],center:["52%","50%"],avoidLabelOverlap:!1,emphasis:{disabled:!o.length},label:{show:!0,position:"center",textStyle:{fontSize:"14",color:o.length?"#666":"#999999"},formatter:function(){return o.length?c?"CPU":"GPU":n("NoGPUdata")}},labelLine:{show:!1},data:o.length?o:y}]});s==null||s.setOption(F,{notMerge:!0})}},[r,o,p,w,s,a,c,l,n]),i.createElement(A,{ref:x,className:d},!s&&i.createElement("div",{className:"loading"},i.createElement(L,{color:I,size:"10px"})),i.createElement(D,null,i.createElement("div",{className:"echarts",ref:v})))});export default G;

@@ -1,0 +1,1 @@
+import u from"../../__snowpack__/pkg/lodash/throttle.js";import l from"./useCreation.js";import{useRef as s}from"../../__snowpack__/pkg/react.js";function _(e,t){var a;const r=s(e);r.current=e;const n=(a=t==null?void 0:t.wait)!=null?a:1e3,c=l(()=>u((...o)=>{r.current(...o)},n,t),[]);return{run:c,cancel:c.cancel}}export default _;

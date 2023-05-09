@@ -1,0 +1,1 @@
+function i(u,t){for(const e of t){const n=u[e.group][e.name];if(n!=null)switch(e.type){case"numeric":case"string":{if(e.selectedValues!=null&&!e.selectedValues.includes(n))return!1;continue}case"continuous":{if(e.min!=null&&e.max!=null&&(typeof n!="number"||n<e.min||n>e.max))return!1;continue}}}return!0}export function filter(u,t){return u.reduce((e,n)=>(i(n,t)&&e.push(n),e),[])}

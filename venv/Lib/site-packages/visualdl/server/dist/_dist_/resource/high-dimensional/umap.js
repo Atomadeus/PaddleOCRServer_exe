@@ -1,0 +1,1 @@
+import{UMAP as m}from"../../../__snowpack__/pkg/umap-js.js";export default(f,g,e,i,r)=>{if(e.length===0)return;const n=new m({nComponents:f,nNeighbors:g}),o=[];for(let t=0;t<e.length;t+=i)o.push(Array.from(e.slice(t,t+i)));const s=n.initializeFit(o);for(let t=0;t<s;t++)r==null||r(t,s),n.step();return{embedding:n.getEmbedding(),nEpochs:s}};

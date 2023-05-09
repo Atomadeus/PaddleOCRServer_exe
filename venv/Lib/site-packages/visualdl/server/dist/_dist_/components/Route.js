@@ -1,0 +1,1 @@
+import{Route as o}from"../../__snowpack__/pkg/react-router-dom.js";import t,{useEffect as s}from"../../__snowpack__/pkg/react.js";import r from"../../__snowpack__/pkg/nprogress.js";const _=e=>(s(()=>(r.start(),()=>{r.done()}),[]),t.createElement(o,{...e}));export default _;

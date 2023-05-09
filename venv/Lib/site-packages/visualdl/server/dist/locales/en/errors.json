@@ -1,0 +1,30 @@
+{
+    "common": {
+        "1": "Log files are not generated. Please refer to <1>README</1> to create log files.",
+        "2": "Log files are generated but data is not written yet. Please refer to <1>VisualDL User Guide</1> to write visualized data.",
+        "3": "Log files are generated and data is writte. Please try to <1>Refresh</1>.",
+        "4": "Log files are generated but path to log directory is wrong. Please check your directory and try again.",
+        "description": "Possible reasons are:",
+        "title": "No visualized data."
+    },
+    "error": "Error occurred",
+    "network-error": "Network Error",
+    "page-not-found": "Page Not Found",
+    "parse-error": "Parse Error",
+    "response-error": {
+        "400": "Bad Request",
+        "401": "Unauthorized",
+        "403": "Permission Denied",
+        "404": "Interface Does Not Exist",
+        "405": "Method Not Allowed",
+        "408": "Request Timeout",
+        "413": "Request Entity Too Large",
+        "414": "Request-URI Too Long",
+        "500": "Internal Server Error",
+        "501": "Not Implemented",
+        "502": "Bad Gateway",
+        "503": "Service Unavailable",
+        "504": "Gateway Timeout",
+        "unknown": "Server Error"
+    }
+}

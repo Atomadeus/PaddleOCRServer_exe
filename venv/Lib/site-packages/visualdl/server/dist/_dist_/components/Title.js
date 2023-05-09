@@ -1,0 +1,1 @@
+import e from"../../__snowpack__/pkg/react.js";import{Helmet as l}from"../../__snowpack__/pkg/react-helmet.js";const r=({children:t})=>e.createElement(l,null,e.createElement("title",null,t));export default r;

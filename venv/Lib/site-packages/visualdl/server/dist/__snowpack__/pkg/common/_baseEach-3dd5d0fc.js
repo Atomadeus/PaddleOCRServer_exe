@@ -1,0 +1,1 @@
+import{_ as u}from"./_baseFor-0f74a056.js";import{k as _}from"./_baseIsEqual-b23e7931.js";import{i}from"./isArrayLike-4a96f864.js";function t(a,e){return a&&u(a,e,_)}var h=t;function k(a,e){return function(r,f){if(r==null)return r;if(!i(r))return a(r,f);for(var n=r.length,s=e?n:-1,b=Object(r);(e?s--:++s<n)&&f(b[s],s,b)!==!1;);return r}}var m=k,v=m(h),E=v;export{E as _};

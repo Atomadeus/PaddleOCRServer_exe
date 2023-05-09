@@ -1,0 +1,3 @@
+import c,{useMemo as p}from"../../../__snowpack__/pkg/react.js";import{SCALE_METHODS as m}from"../../resource/hyper-parameter/index.js";import l from"./BorderLessSelect.js";import _ from"../../../__snowpack__/pkg/styled-components.js";import{useTranslation as i}from"../../../__snowpack__/pkg/react-i18next.js";const n=_(l)`
+    min-width: 7em;
+`,d=({scaleMethod:s,direction:o,onChange:t})=>{const{t:r}=i("hyper-parameter"),a=p(()=>m.map(e=>({value:e,label:r(`hyper-parameter:scale-method.${e}`)})),[r]);return c.createElement(n,{direction:o,list:a,value:s,onChange:e=>t==null?void 0:t(e)})};export default d;

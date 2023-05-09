@@ -1,0 +1,17 @@
+{
+    "ignore-outliers": "Ignore outliers in chart scaling",
+    "max": "Max.",
+    "min": "Min.",
+    "show-most-value": "Show global extrema",
+    "smoothed": "Smoothed",
+    "smoothed-data-only": "Smoothed Data Only",
+    "smoothing": "Smoothing",
+    "tooltip-sorting": "Tooltip Sorting",
+    "tooltip-sorting-value": {
+        "ascending": "Ascending",
+        "default": "Default",
+        "descending": "Descending",
+        "nearest": "Nearest"
+    },
+    "x-axis": "X-Axis"
+}

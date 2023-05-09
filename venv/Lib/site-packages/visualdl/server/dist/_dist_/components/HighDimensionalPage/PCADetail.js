@@ -1,0 +1,3 @@
+import t,{useMemo as c}from"../../../__snowpack__/pkg/react.js";import l from"../Field.js";import{format as i}from"../../../__snowpack__/pkg/d3-format.js";import p from"../../../__snowpack__/pkg/styled-components.js";import{useTranslation as _}from"../../../__snowpack__/pkg/react-i18next.js";const r=i(".2%"),d=p(l)`
+    line-height: 2.4;
+`,f=({dimension:n,variance:m,totalVariance:a})=>{const{t:o}=_(["high-dimensional","common"]),s=c(()=>n==="3d"?3:2,[n]);return t.createElement(d,null,Array.from({length:s}).map((g,e)=>t.createElement("div",{key:e},o("high-dimensional:component",{index:e+1}),o("common:colon"),m[e]==null?"--":r(m[e]))),t.createElement("div",{className:"secondary"},o("high-dimensional:total-variance-described"),o("common:colon"),r(a)))};export default f;

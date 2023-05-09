@@ -1,0 +1,1 @@
+export const nearestPoint=(r,I)=>r.map(e=>{let n=Number.POSITIVE_INFINITY,a=0;for(let t=0;t<e.length;t++){const l=Math.abs(e[t][1]-I);if(l<Number.EPSILON){a=e[t][1];break}l<n&&(n=l,a=e[t][1])}return e.filter(t=>t[1]===a)});

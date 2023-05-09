@@ -1,0 +1,1 @@
+import{parseFromBlob as n,parseFromString as r}from"../../resource/high-dimensional/index.js";const e=i=>{i.on("RUN",async m=>{if(m){if(m.from==="string")return i.emit("RESULT",r(m.params));if(m.from==="blob")return i.emit("RESULT",await n(m.params))}i.emit("RESULT",null)}),i.emit("INITIALIZED")};export default e;

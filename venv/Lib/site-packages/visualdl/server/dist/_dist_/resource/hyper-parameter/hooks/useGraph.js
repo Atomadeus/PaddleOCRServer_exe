@@ -1,0 +1,1 @@
+import{useCallback as n,useMemo as h,useState as a}from"../../../../__snowpack__/pkg/react.js";export default function S(o,s){const c=h(()=>o.filter(e=>e.selected),[o]),[r,l]=a(null),[t,u]=a(!1),p=n(e=>{t||l(e==null?null:s[e])},[s,t]),f=n(e=>{l(e==null?null:s[e]),u(e!=null)},[s]);return{selectedIndicators:c,sessionData:r,onHover:p,onSelect:f,showMetricsGraph:t}}

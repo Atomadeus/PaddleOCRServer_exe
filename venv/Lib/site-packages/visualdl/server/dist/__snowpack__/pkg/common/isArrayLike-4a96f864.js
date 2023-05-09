@@ -1,0 +1,1 @@
+import{i as n}from"./_getNative-f6f203b5.js";var t=9007199254740991;function s(r){return typeof r=="number"&&r>-1&&r%1==0&&r<=t}var i=s;function e(r){return r!=null&&i(r.length)&&!n(r)}var o=e;export{i as a,o as i};

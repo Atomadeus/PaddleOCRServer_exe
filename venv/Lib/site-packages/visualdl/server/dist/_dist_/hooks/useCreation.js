@@ -1,0 +1,1 @@
+import{useRef as t}from"../../__snowpack__/pkg/react.js";export default function u(r,e){const{current:i}=t({deps:e,obj:void 0,initialized:!1});return(i.initialized===!1||!n(i.deps,e))&&(i.deps=e,i.obj=r(),i.initialized=!0),i.obj}function n(r,e){if(r===e)return!0;for(const i in r)if(r[i]!==e[i])return!1;return!0}

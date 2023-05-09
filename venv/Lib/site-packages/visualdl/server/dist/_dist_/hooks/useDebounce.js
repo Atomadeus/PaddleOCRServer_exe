@@ -1,0 +1,1 @@
+import{useEffect as n,useState as r}from"../../__snowpack__/pkg/react.js";const s=(e,t)=>{const[o,u]=r(e);return n(()=>{const c=setTimeout(()=>{u(e)},t);return()=>clearTimeout(c)},[e,t]),o};export default s;

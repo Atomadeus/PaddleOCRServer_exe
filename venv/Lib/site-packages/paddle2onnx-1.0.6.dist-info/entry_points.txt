@@ -1,0 +1,2 @@
+[console_scripts]
+paddle2onnx = paddle2onnx.command:main

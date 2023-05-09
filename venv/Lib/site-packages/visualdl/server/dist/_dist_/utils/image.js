@@ -1,0 +1,1 @@
+export function dataURL2Blob(a){const n=a.split(";base64,"),s=n[0].split(":")[1],o=window.atob(n[1]),e=o.length,r=new Uint8Array(e);for(let t=0;t<e;++t)r[t]=o.charCodeAt(t);return new Blob([r],{type:s})}

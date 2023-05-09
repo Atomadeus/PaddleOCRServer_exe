@@ -1,0 +1,1 @@
+import a from"../../../__snowpack__/pkg/react.js";import m from"../../../__snowpack__/pkg/react-content-loader.js";import{themes as e}from"../../utils/theme.js";import n from"../../hooks/useTheme.js";const s=({children:r,...t})=>{const o=n();return a.createElement(m,{backgroundColor:e[o].loaderBackgroundColor,foregroundColor:e[o].loaderForegroundColor,...t},r)};export default s;

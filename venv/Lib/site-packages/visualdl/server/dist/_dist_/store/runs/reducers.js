@@ -1,0 +1,1 @@
+import{ActionTypes as t}from"./types.js";const u={scalar:[],histogram:[],image:[],audio:[],text:[],"pr-curve":[],"roc-curve":[]};function s(r=u,e){switch(e.type){case t.SET_SELECTED_RUNS:return{...r,[e.page]:e.runs};default:return r}}export default s;

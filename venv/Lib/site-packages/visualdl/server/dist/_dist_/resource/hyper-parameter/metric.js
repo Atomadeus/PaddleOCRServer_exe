@@ -1,0 +1,1 @@
+export function calculateRelativeTime(n){let t=0;return n.map((e,l)=>{const o=Math.floor(e[0]);l===0&&(t=o);const a=o-t;return[o,e[1],e[2],a]})}export function chartData(n,t){const e=t.label,l=t.colors[0];return[{name:e,itemStyle:{color:l},lineStyle:{color:l},data:n,encode:{x:[1],y:[2]}}]}

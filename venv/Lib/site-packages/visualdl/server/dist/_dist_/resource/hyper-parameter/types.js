@@ -1,0 +1,1 @@
+export var OrderDirection;(function(i){i.ASCENDING="asc",i.DESCENDING="desc"})(OrderDirection||(OrderDirection={}));export var ScaleMethod;(function(i){i.LINEAR="linear",i.LOGARITHMIC="logarithmic",i.QUANTILE="quantile"})(ScaleMethod||(ScaleMethod={}));

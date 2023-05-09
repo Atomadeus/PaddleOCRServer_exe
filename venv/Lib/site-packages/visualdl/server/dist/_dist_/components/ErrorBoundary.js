@@ -1,0 +1,1 @@
+import t from"../../__snowpack__/pkg/react.js";class e extends t.Component{constructor(){super(...arguments);this.state={hasError:!1,error:null}}static getDerivedStateFromError(r){return{hasError:!0,error:r}}render(){return this.state.hasError?this.props.fallback:this.props.children}}export default e;

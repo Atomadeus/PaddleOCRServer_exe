@@ -1,0 +1,7 @@
+import i,{useCallback as d,useMemo as s}from"../../../__snowpack__/pkg/react.js";import{calculateRelativeTime as f,chartData as h}from"../../resource/hyper-parameter/index.js";import{formatTime as g,humanizeDuration as k}from"../../utils/index.js";import w from"../ScalarChart.js";import{format as j}from"../../../__snowpack__/pkg/d3-format.js";import y from"../../../__snowpack__/pkg/query-string.js";import b from"../../../__snowpack__/pkg/styled-components.js";import v from"../../hooks/useRequest.js";import{useTranslation as T}from"../../../__snowpack__/pkg/react-i18next.js";const q=j(".5"),x=b.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`,R=({metric:o,run:t})=>{const{t:e,i18n:m}=T(["hyper-parameter","common"]),{data:r,error:c,loading:p}=v(y.stringifyUrl({url:"/hparams/metric",query:{run:t.label,metric:o}})),l=s(()=>f(r!=null?r:[]),[r]),u=s(()=>h(l,t),[l,t]),_=d(a=>{var n;return{runs:[t],columns:[{label:e("common:scalar-value"),width:"4.285714286em"},{label:e("common:time-mode.step"),width:"2.857142857em"},{label:e("common:time-mode.wall"),width:"10.714285714em"},{label:e("common:time-mode.relative"),width:"4.285714286em"}],data:[[q((n=a[2])!=null?n:Number.NaN),a[1],g(a[0],m.language),k(a[3])]]}},[m.language,t,e]);return!r&&c?i.createElement(x,null,e("common:error")):i.createElement(w,{title:o,data:u,loading:p,getTooltipTableData:_})};export default R;

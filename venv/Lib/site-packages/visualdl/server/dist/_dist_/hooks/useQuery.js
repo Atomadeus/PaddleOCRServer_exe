@@ -1,0 +1,1 @@
+import o from"../../__snowpack__/pkg/query-string.js";import{useLocation as s}from"../../__snowpack__/pkg/react-router-dom.js";import{useMemo as t}from"../../__snowpack__/pkg/react.js";const c=r=>{const e=s();return t(()=>o.parse(e.search,r),[e.search,r])};export default c;

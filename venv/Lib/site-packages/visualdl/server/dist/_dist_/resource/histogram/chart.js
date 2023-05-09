@@ -1,0 +1,1 @@
+const e={legend:{data:[]}};export const options={overlay:{...e,axisPointer:{link:[{xAxisIndex:"all"}],show:!0,snap:!0,triggerTooltip:!0},yAxis:{axisLine:{onZero:!1}}},offset:{...e,visualMap:{type:"continuous",show:!1,dimension:1,inRange:{colorLightness:[.5,.8],colorSaturation:[.5,.8]}},xAxis:{axisLine:{onZero:!1}},yAxis:{axisLine:{onZero:!1},inverse:!0,splitLine:{show:!1}}}};

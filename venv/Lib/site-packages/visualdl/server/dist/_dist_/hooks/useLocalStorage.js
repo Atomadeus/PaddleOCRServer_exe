@@ -1,0 +1,1 @@
+import{useCallback as t,useMemo as l}from"../../__snowpack__/pkg/react.js";const s=o=>{const e=l(()=>window.localStorage.getItem(o),[o]),a=t(c=>window.localStorage.setItem(o,c),[o]),r=t(()=>window.localStorage.removeItem(o),[o]);return[e,a,r]};export default s;

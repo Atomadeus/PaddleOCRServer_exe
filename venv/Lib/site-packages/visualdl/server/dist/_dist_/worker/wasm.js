@@ -1,0 +1,1 @@
+import*as i from"../../__snowpack__/link/packages/wasm/dist/index.js";import e from"../../__snowpack__/link/packages/wasm/dist/index.js";const c=async a=>{await e(),a.on("RUN",({name:t,params:n})=>{try{const s=i[t](...n);a.emit("RESULT",s)}catch(s){if(s.message!=="unreachable")throw s}}),a.emit("INITIALIZED")};export default c;
